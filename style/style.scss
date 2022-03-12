@@ -60,6 +60,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     width: 100%;
     height: 100%;
     min-width: 375px;
+    font-family: Gilroy;
     .header {
         padding: 33px 10px 0px 10px;
         max-width: 1445px;
@@ -72,7 +73,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
                     font-size: 18px;
                     font-weight: 650;
                     list-style-type: none;
-                    font-family: Gilroy;
                     padding-bottom: 42px;
                     a {
                         text-decoration: none;
@@ -90,7 +90,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
             background: #828282;
         }
         .description {
-            font-family: Gilroy;
             display: flex;
             justify-content: space-between;
             h1 {
@@ -135,17 +134,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         }
     }
 }
-
 //========Main==============
 //about
 .about {
-    font-family: Gilroy;
     text-align: center;
     background: #F6F6F6;
     .about__tytle {
         padding-top: 120px;
     }
-    div {
+    .description {
         max-width: 480px;
         padding-top: 17px;
         margin: 0 auto;
@@ -159,7 +156,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         }
     }
 }
-
 //skills
 .skills {
     background: #fff;
@@ -204,6 +200,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .portfolio {
     background: #F6F6F6;
     padding-top: 110px;
+    padding-bottom: 96px;
     .portfolio__photo {
         padding-top: 47px;
         text-align: center;
@@ -215,6 +212,48 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         .portfolio__link_underline {
             color: $black;
             text-decoration: underline;
+        }
+    }
+}
+footer {
+    padding: 110px 0px 120px 0px;
+    .contacts__description {
+        font-size: 18px;
+        color: $black;
+        text-align: center;
+        padding-top: 20px;
+        line-height: 21px;
+    }
+    .contacts__button {
+        padding-top: 29px;
+        text-align: center;
+        button {
+            font-size: 18px;
+            color: #fff;
+            background: $black;
+            padding: 13px 30px 13px 30px;
+            white-space: nowrap;
+            border-radius: 25px 25px;
+            font-weight: 600;
+            a {
+                color: #fff;
+            }
+        }
+    }
+    .contacts__social {
+        padding-top: 79px;
+        margin: 0 auto;
+        display: flex;
+        width: 330px;
+        justify-content: space-between;
+    }
+    .contacts__name {
+        padding-top: 45px;
+        p {
+            color: $gray;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
         }
     }
 }

@@ -102,6 +102,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   min-width: 375px;
+  font-family: Gilroy;
 }
 
 .wrapper .header {
@@ -123,7 +124,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   font-weight: 650;
   list-style-type: none;
-  font-family: Gilroy;
   padding-bottom: 42px;
 }
 
@@ -143,7 +143,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper .header .description {
-  font-family: Gilroy;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,7 +199,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about {
-  font-family: Gilroy;
   text-align: center;
   background: #F6F6F6;
 }
@@ -209,14 +207,14 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 120px;
 }
 
-.about div {
+.about .description {
   max-width: 480px;
   padding-top: 17px;
   margin: 0 auto;
   padding-bottom: 100px;
 }
 
-.about div p {
+.about .description p {
   padding-top: 20px;
   font-size: 18px;
   color: #070707;
@@ -280,6 +278,7 @@ h1, h2, h3, h4, h5, h6 {
 .portfolio {
   background: #F6F6F6;
   padding-top: 110px;
+  padding-bottom: 96px;
 }
 
 .portfolio .portfolio__photo {
@@ -296,4 +295,58 @@ h1, h2, h3, h4, h5, h6 {
 .portfolio .portfolio__link .portfolio__link_underline {
   color: #070707;
   text-decoration: underline;
+}
+
+footer {
+  padding: 110px 0px 120px 0px;
+}
+
+footer .contacts__description {
+  font-size: 18px;
+  color: #070707;
+  text-align: center;
+  padding-top: 20px;
+  line-height: 21px;
+}
+
+footer .contacts__button {
+  padding-top: 29px;
+  text-align: center;
+}
+
+footer .contacts__button button {
+  font-size: 18px;
+  color: #fff;
+  background: #070707;
+  padding: 13px 30px 13px 30px;
+  white-space: nowrap;
+  border-radius: 25px 25px;
+  font-weight: 600;
+}
+
+footer .contacts__button button a {
+  color: #fff;
+}
+
+footer .contacts__social {
+  padding-top: 79px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 330px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .contacts__name {
+  padding-top: 45px;
+}
+
+footer .contacts__name p {
+  color: #828282;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
 }
