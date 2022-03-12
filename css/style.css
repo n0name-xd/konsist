@@ -1,0 +1,180 @@
+@charset "UTF-8";
+@import url("/fonts/gilroy/stylesheet.css");
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .conteiner {
+  max-width: 1445px;
+  margin: 0 auto;
+  padding: 0px 10px 0px 10px;
+}
+
+.wrapper .conteiner .header {
+  padding: 33px 0px 0px 0px;
+}
+
+.wrapper .conteiner .header .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .conteiner .header .nav ul li {
+  font-size: 18px;
+  font-weight: 650;
+  list-style-type: none;
+  font-family: Gilroy;
+  padding-bottom: 42px;
+}
+
+.wrapper .conteiner .header .nav ul li a {
+  text-decoration: none;
+  color: #828282;
+}
+
+.wrapper .conteiner .header .nav ul li .firstElement {
+  color: #070707;
+}
+
+.wrapper .conteiner .header .line {
+  width: 100%;
+  height: 2px;
+  background: #828282;
+}
+
+.wrapper .conteiner .header .description {
+  font-family: Gilroy;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .conteiner .header .description h1 {
+  font-size: 74px;
+  color: #070707;
+  font-weight: 600;
+}
+
+.wrapper .conteiner .header .description .description__profession {
+  font-size: 18px;
+  color: #070707;
+  line-height: 22px;
+  padding-top: 150px;
+}
+
+.wrapper .conteiner .header .description .description__language {
+  font-size: 16px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 83px;
+  margin-right: -25px;
+}
+
+.wrapper .conteiner .header .description .description__language .description__language_povorot {
+  color: #070707;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.wrapper .conteiner .header .description .description__language .description__language_povorot span {
+  color: #828282;
+}
+
+.wrapper .conteiner .header .main-photo {
+  width: 100%;
+  text-align: center;
+  max-height: 387px;
+}
+
+.wrapper .conteiner .header .main-photo img {
+  width: 100%;
+  display: block;
+  padding-bottom: 100px;
+}
