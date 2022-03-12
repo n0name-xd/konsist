@@ -37,85 +37,165 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
+.block-name {
+    font-family: Gilroy;
+    color: $black;
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+}
+.name-program {
+    font-size: 14px;
+    color: $gray;
+    text-align: center;
+}
+.stars__block {
+    display: flex;
+    li {
+        padding-right: 9px;
+    }
+}
 //Header
 .wrapper {
     width: 100%;
     height: 100%;
-    .conteiner {
+    min-width: 375px;
+    .header {
+        padding: 33px 10px 0px 10px;
         max-width: 1445px;
         margin: 0 auto;
-        padding: 0px 10px 0px 10px;
-        .header {
-            padding: 33px 0px 0px 0px;
-            .nav {
-                ul {
-                    display: flex;
-                    justify-content: space-between;
-                    li {
-                        font-size: 18px;
-                        font-weight: 650;
-                        list-style-type: none;
-                        font-family: Gilroy;
-                        padding-bottom: 42px;
-                        a {
-                            text-decoration: none;
-                            color: $gray;
-                        }
-                        .firstElement {
-                            color: $black;
-                        }
-                    }
-                }
-            }
-            .line {
-                width: 100%;
-                height: 2px;
-                background: #828282;
-            }
-            .description {
-                font-family: Gilroy;
+        .nav {
+            ul {
                 display: flex;
                 justify-content: space-between;
-                h1 {
-                    font-size: 74px;
-                    color: $black;
-                    font-weight: 600;
-                }
-                .description__profession {
+                li {
                     font-size: 18px;
-                    color: $black;
-                    line-height: 22px;
-                    padding-top: 150px;
-                }
-                .description__language {
-                    font-size: 16px;
-                    font-weight: 700;
-                    display: flex;
-                    align-items: flex-end;
-                    margin-bottom: 83px;
-                    margin-right: -25px;
-                    .description__language_povorot {
+                    font-weight: 650;
+                    list-style-type: none;
+                    font-family: Gilroy;
+                    padding-bottom: 42px;
+                    a {
+                        text-decoration: none;
+                        color: $gray;
+                    }
+                    .firstElement {
                         color: $black;
-                        -webkit-transform: rotate(-90deg);
-                        -moz-transform: rotate(-90deg);
-                        -o-transform: rotate(-90deg);
-                        -ms-transform: rotate(-90deg);
-                        transform: rotate(-90deg);
-                        span {
-                            color: $gray
-                        }
                     }
                 }
             }
-            .main-photo {
-                width: 100%;
-                text-align: center;
-                max-height: 387px;
-                img {
-                    width: 100%;
-                    display: block;
-                    padding-bottom: 100px;
+        }
+        .line {
+            width: 100%;
+            height: 2px;
+            background: #828282;
+        }
+        .description {
+            font-family: Gilroy;
+            display: flex;
+            justify-content: space-between;
+            h1 {
+                font-size: 74px;
+                color: $black;
+                font-weight: 600;
+            }
+            .description__profession {
+                font-size: 18px;
+                color: $black;
+                line-height: 22px;
+                padding-top: 150px;
+            }
+            .description__language {
+                font-size: 16px;
+                font-weight: 700;
+                display: flex;
+                align-items: flex-end;
+                margin-bottom: 83px;
+                margin-right: -25px;
+                .description__language_povorot {
+                    color: $black;
+                    -webkit-transform: rotate(-90deg);
+                    -moz-transform: rotate(-90deg);
+                    -o-transform: rotate(-90deg);
+                    -ms-transform: rotate(-90deg);
+                    transform: rotate(-90deg);
+                    span {
+                        color: $gray
+                    }
                 }
+            }
+        }
+        .main-photo {
+            text-align: center;
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+                padding-bottom: 100px;
+            }
+        }
+    }
+}
+
+//========Main==============
+//about
+.about {
+    font-family: Gilroy;
+    text-align: center;
+    background: #F6F6F6;
+    .about__tytle {
+        padding-top: 120px;
+    }
+    div {
+        max-width: 480px;
+        padding-top: 17px;
+        margin: 0 auto;
+        padding-bottom: 100px;
+        p {
+            padding-top: 20px;
+            font-size: 18px;
+            color: $black;
+            font-weight: 500;
+            line-height: 22px;
+        }
+    }
+}
+
+//skills
+.skills {
+    background: #fff;
+    padding-top: 90px;
+    max-width: 935px;
+    margin: 0 auto;
+    div {
+        padding-top: 69px;
+        p {
+            color: $black;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    .skills__items {
+        padding: 87px 0px 100px 0px;
+        display: flex;
+        justify-content: space-between;
+        .block-program {
+            width: 175px;
+            padding: 0;
+            .icon {
+                text-align: center;
+                padding: 0px 0px 0px 0px;
+                img {
+                    background: #2E1B43;
+                }
+                .icon_figma {
+                    background: #fff;
+                }
+            }
+            .name-program {
+                padding: 25px 0px 0px 0px;
+            }
+            .stars {
+                padding: 40px 0px 0px 9px;
             }
         }
     }
