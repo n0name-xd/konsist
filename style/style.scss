@@ -200,4 +200,22 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         }
     }
 }
+//portfolio
+.portfolio {
+    background: #F6F6F6;
+    padding-top: 110px;
+    .portfolio__photo {
+        padding-top: 47px;
+        text-align: center;
+    }
+    .portfolio__link {
+        padding-top: 44px;
+        font-size: 18px;
+        text-align: center;
+        .portfolio__link_underline {
+            color: $black;
+            text-decoration: underline;
+        }
+    }
+}
 

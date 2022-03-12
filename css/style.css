@@ -276,3 +276,24 @@ h1, h2, h3, h4, h5, h6 {
 .skills .skills__items .block-program .stars {
   padding: 40px 0px 0px 9px;
 }
+
+.portfolio {
+  background: #F6F6F6;
+  padding-top: 110px;
+}
+
+.portfolio .portfolio__photo {
+  padding-top: 47px;
+  text-align: center;
+}
+
+.portfolio .portfolio__link {
+  padding-top: 44px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.portfolio .portfolio__link .portfolio__link_underline {
+  color: #070707;
+  text-decoration: underline;
+}
