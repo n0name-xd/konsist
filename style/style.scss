@@ -57,16 +57,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 //Header
 .wrapper {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    min-width: 375px;
     font-family: Gilroy;
+    min-width: 375px;
     .header {
-        width: 100%;
+        max-width: 943px;
         height: auto;
         margin: 0 auto;
         padding: 33px 10px 0px 10px;
-        max-width: 943px;
         .nav {
             ul {
                 display: flex;
@@ -87,7 +86,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
             }
         }
         .line {
-            width: 100%;
+            max-width: 100%;
             height: 2px;
             background: #828282;
         }
@@ -128,28 +127,89 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         .main-photo {
             text-align: center;
             img {
-                width: 100%;
+                max-width: 100%;
                 height: auto;
                 padding-bottom: 100px;
             }
         }
     }
 }
-// @media (max-width: 992px) {
-//     .header {
-
-//     }
-// }
-// @media (max-width: 767px) {
-//     .header {
-
-//     }
-// }
-// @media (max-width: 480px) {
-//     .header {
-
-//     }
-// }
+//////////////////////////////////////////////////////////////////////////
+@media (max-width: 767px) {
+    .wrapper {
+        .header {
+            padding: 30px 10px 0px 10px;
+            .nav {
+                ul {
+                    li {
+                        font-size: 18px;
+                        padding-bottom: 30px;
+                    }
+                }
+            }
+            .description {
+                display: flex;
+                justify-content: space-between;
+                h1 {
+                    font-size: 54px;
+                }
+                .description__profession {
+                    padding-top: 90px;
+                }
+                .description__language {
+                    font-size: 16px;
+                    display: flex;
+                    align-items: flex-end;
+                    margin-bottom: 83px;
+                    margin-right: -25px;
+                }
+            }
+            .main-photo {
+                text-align: center;
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    padding-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .wrapper {
+        .header {
+            padding: 30px 10px 0px 10px;
+            .nav {
+                ul {
+                    li {
+                        font-size: 16px;
+                        padding-bottom: 22px;
+                    }
+                }
+            }
+            .description {
+                h1 {
+                    font-size: 36px;
+                }
+                .description__profession {
+                    padding-top: 50px;
+                }
+                .description__language {
+                    font-size: 16px;
+                    display: flex;
+                    align-items: flex-end;
+                    margin-bottom: 63px;
+                    margin-right: -25px;
+                }
+            }
+            .main-photo {
+                img {
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+}
 //========Main==============
 //about
 .about {
@@ -167,8 +227,42 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
             padding-top: 20px;
             font-size: 18px;
             color: $black;
-            font-weight: 500;
+
             line-height: 22px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .about {
+        .about__tytle {
+            padding-top: 80px;
+        }
+        .description {
+            padding-bottom: 80px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .about {
+        .about__tytle {
+            padding-top: 40px;
+        }
+        .description {
+            max-width: 430px;
+            padding-top: 17px;
+            padding-bottom:50px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .about {
+        .about__tytle {
+            padding-top: 29px;
+        }
+        .description {
+            max-width: 316px;
+            padding-top: 17px;
+            padding-bottom: 76px;
         }
     }
 }
@@ -212,6 +306,44 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         }
     }
 }
+@media (max-width: 992px) {
+    .skills {
+        padding-top: 60px;
+        max-width: 800px;
+        div {
+            padding-top: 50px;
+        }
+        .skills__items {
+            padding: 70px 0px 90px 0px;
+            display: flex;
+            justify-content: space-between;
+            .block-program {
+                width: 175px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .skills {
+        padding-top: 60px;
+        max-width: 800px;
+        div {
+            padding-top: 50px;
+            p {
+                margin-bottom: -80px;
+            }
+        }
+        .skills__items {
+            padding: 70px 0px 90px 0px;
+            display: block;
+            .block-program {
+                width: 175px;
+                margin: 0 auto;
+                padding-top: 80px;
+            }
+        }
+    }
+}
 //portfolio
 .portfolio {
     background: #F6F6F6;
@@ -220,6 +352,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     .portfolio__photo {
         padding-top: 47px;
         text-align: center;
+        max-width: 936px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
     }
     .portfolio__link {
         padding-top: 44px;
@@ -231,6 +368,23 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         }
     }
 }
+@media (max-width: 992px) {
+    .portfolio {
+        padding: 90px 30px;
+        .portfolio__link {
+            padding-top: 40px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .portfolio {
+        padding: 80px 30px;
+        .portfolio__link {
+            padding-top: 35px;
+        }
+    }
+}
+//footer
 footer {
     padding: 110px 0px 120px 0px;
     .contacts__description {
