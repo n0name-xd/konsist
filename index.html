@@ -21,15 +21,15 @@
                 <nav class="nav">
                     <ul class="nav__items">
                         <li><a class="firstElement" href="#">Home</a></li>
-                        <li><a href="#">About me</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
                     </ul>
                 </nav>
                 <div class="line">
                 </div>
-                <div class="description">
+                <div class="description" id="about">
                     <h1 class="description__name">
                         Denis <br> Novik
                     </h1>
@@ -43,7 +43,11 @@
                     </div>
                 </div>
                 <div class="main-photo">
+                <picture >
+                    <source media="(max-width: 475px)"
+                            srcset="/img/photo/mainmobile.png">   
                     <img src="/img/photo/mainphoto.png" alt="photo Denis" class="photo-item">
+                 </picture>
                 </div>
         </header>
         <main>
@@ -64,7 +68,7 @@
                     </p>
                 </div>
             </div> 
-            <div class="skills">
+            <div class="skills" id="skills">
                 <h2 class="skills__tytle block-name">Skills</h2>
                 <div>
                     <p>
@@ -151,7 +155,7 @@
                     
                 </div>
             </div> 
-            <div class="portfolio">
+            <div class="portfolio" id="portfolio">
                 <h2 class="portfolio__tytle block-name">Portfolio</h2>
                 <div>
                     <div class="portfolio__photo">
@@ -179,7 +183,7 @@
                 </div>
             </div>
         </main>
-        <footer> 
+        <footer id="contacts"> 
             <div class="contacts__tytle">
                 <h2 class="block-name">Contacts</h2>
             </div>
@@ -193,16 +197,16 @@
             </div>
             <div class="contacts__social">
                 <div class="social__icon">
-                    <img src="/img/social/linkedin.png" alt="icon">
+                    <a href="https://www.linkedin.com"><img src="/img/social/linkedin.png" alt="icon"></a>
                 </div>
                 <div class="social__icon">
-                    <img src="/img/social/instagram.png" alt="icon">
+                    <a href="https://www.instagram.com/"><img src="/img/social/instagram.png" alt="icon"></a>
                 </div>
                 <div class="social__icon">
-                    <img src="/img/social/behance.png" alt="icon">
+                    <a href="https://www.behance.net/"><img src="/img/social/behance.png" alt="icon"></a>
                 </div>
                 <div class="social__icon">
-                    <img src="/img/social/dribble.png" alt="icon">
+                    <a href="https://dribbble.com/"><img src="/img/social/dribble.png" alt="icon"></a>
                 </div>
             </div>
             <div class="contacts__name">

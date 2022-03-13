@@ -133,6 +133,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #828282;
 }
 
+.wrapper .header .nav ul li a:hover {
+  text-shadow: 1px 1px black;
+}
+
 .wrapper .header .nav ul li .firstElement {
   color: #070707;
 }
@@ -206,14 +210,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     padding-bottom: 30px;
   }
-  .wrapper .header .description {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .wrapper .header .description h1 {
     font-size: 54px;
   }
@@ -245,26 +241,24 @@ h1, h2, h3, h4, h5, h6 {
   .wrapper .header {
     padding: 30px 10px 0px 10px;
   }
-  .wrapper .header .nav ul li {
-    font-size: 16px;
-    padding-bottom: 22px;
+  .wrapper .header .nav {
+    display: none;
+  }
+  .wrapper .header .line {
+    display: none;
+  }
+  .wrapper .header .description {
+    display: block;
+    padding: 0px 0px 0px 26px;
   }
   .wrapper .header .description h1 {
-    font-size: 36px;
+    font-size: 47px;
   }
   .wrapper .header .description .description__profession {
-    padding-top: 50px;
+    padding: 20px 0px;
   }
   .wrapper .header .description .description__language {
-    font-size: 16px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    margin-bottom: 63px;
-    margin-right: -25px;
+    display: none;
   }
   .wrapper .header .main-photo img {
     padding-bottom: 30px;
@@ -497,6 +491,11 @@ footer .contacts__button button {
 
 footer .contacts__button button a {
   color: #fff;
+}
+
+footer .contacts__button button:hover {
+  -webkit-box-shadow: 0px 0px 15px gray;
+          box-shadow: 0px 0px 15px gray;
 }
 
 footer .contacts__social {
