@@ -18,9 +18,21 @@
 <body>
     <div class="wrapper">
         <header class="header">
-                <nav class="nav">
-                    <ul class="nav__items">
-                        <li><a class="firstElement" href="#">Home</a></li>
+                <nav class="nav" id="home">
+                    <div id="myNav" class="burger">
+                        <a class="closebtn" onclick="closeNav()"><img src="/img/cross.png" alt="close"></a>
+                        <div class="burger-content">
+                          <a href="#about" onclick="closeNav()">About me</a>
+                          <a href="#skills" onclick="closeNav()">Skills</a>
+                          <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+                          <a href="#contacts" onclick="closeNav()">Contacts</a>
+                        </div>
+                      </div>
+                      <div class="icon__burger">
+                        <span onclick="openNav()"><img src="/img/burger.png" alt="menu"></span>
+                      </div>
+                    <ul class="nav__items burger__item">
+                        <li><a class="firstElement" href="#home">Home</a></li>
                         <li><a href="#about">About me</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
@@ -217,5 +229,14 @@
             </div>
         </footer> 
     </div>
+    <script src="/js/script.js">
+        function openNav() {
+             document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
 </body>
-</html>
+</html> 

@@ -67,6 +67,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         margin: 0 auto;
         padding: 33px 10px 0px 10px;
         .nav {
+            position: relative;
+            .icon__burger {
+                display: none;
+            }
             ul {
                 display: flex;
                 justify-content: space-between;
@@ -180,9 +184,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 @media (max-width: 480px) {
     .wrapper {
         .header {
-            padding: 30px 10px 0px 10px;
+            padding: 0px 10px 0px 10px;
             .nav {
-                display: none;
+                .icon__burger {
+                    display: block;
+                }
+                ul {
+                    display: none;
+                }
             }
             .line {
                 display: none;
@@ -208,6 +217,43 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         }
     }
 }
+// //==========burger==========
+.icon__burger {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+.burger {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.6s;
+  }
+  .burger-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .burger a {
+    display: block;
+    transition: 0.2s;
+    font-size: 34px; 
+    color: $gray;
+    font-weight: 600;
+    margin-bottom: 68px;
+  }
+  .burger .closebtn {
+    position: absolute;
+    top: 60px;
+    right: 30px;
+  }
 //========Main==============
 //about
 .about {
