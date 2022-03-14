@@ -240,10 +240,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   }
   .burger-content {
     position: relative;
-    top: 25%;
+    top: 10%;
     width: 100%;
-    text-align: center;
-    margin-top: 20px;
+    text-align: start;
+    padding: 0px 0px 0px 26px;
   }
   .burger a {
     display: block;
@@ -252,6 +252,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     color: $gray;
     font-weight: 600;
     margin-bottom: 68px;
+  }
+  .burger a:first-child {
+      color: $black;
   }
   .burger .closebtn {
     position: absolute;
