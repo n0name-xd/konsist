@@ -37,6 +37,7 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
+// Tytle blocks
 .block-name {
     font-family: Gilroy;
     color: $black;
@@ -44,11 +45,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     font-weight: 600;
     text-align: center;
 }
+// Name programs in skills
 .name-program {
     font-size: 14px;
     color: $gray;
     text-align: center;
 }
+// Stars in skills
 .stars__block {
     display: flex;
     li {
@@ -61,6 +64,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     height: auto;
     font-family: Gilroy;
     min-width: 375px;
+    margin: 0 auto;
     .header {
         max-width: 943px;
         height: auto;
@@ -431,16 +435,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 //footer
 footer {
     padding: 110px 0px 120px 0px;
+    text-align: center;
     .contacts__description {
         font-size: 18px;
         color: $black;
-        text-align: center;
         padding-top: 20px;
         line-height: 21px;
     }
     .contacts__button {
         padding-top: 29px;
-        text-align: center;
         button {
             font-size: 18px;
             color: #fff;
@@ -466,11 +469,11 @@ footer {
     }
     .contacts__name {
         padding-top: 45px;
-        p {
+        text-align: center;
+        .social-name {
             color: $gray;
             font-size: 14px;
             line-height: 16px;
-            text-align: center;
         }
     }
 }

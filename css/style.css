@@ -103,6 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
   font-family: Gilroy;
   min-width: 375px;
+  margin: 0 auto;
 }
 
 .wrapper .header {
@@ -518,19 +519,18 @@ h1, h2, h3, h4, h5, h6 {
 
 footer {
   padding: 110px 0px 120px 0px;
+  text-align: center;
 }
 
 footer .contacts__description {
   font-size: 18px;
   color: #070707;
-  text-align: center;
   padding-top: 20px;
   line-height: 21px;
 }
 
 footer .contacts__button {
   padding-top: 29px;
-  text-align: center;
 }
 
 footer .contacts__button button {
@@ -566,11 +566,11 @@ footer .contacts__social {
 
 footer .contacts__name {
   padding-top: 45px;
+  text-align: center;
 }
 
-footer .contacts__name p {
+footer .contacts__name .social-name {
   color: #828282;
   font-size: 14px;
   line-height: 16px;
-  text-align: center;
 }
