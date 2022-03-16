@@ -261,6 +261,22 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     top: 60px;
     right: 30px;
   }
+  .description__language_povorot_minus {
+    position: absolute;
+    right: 8px;
+    top: 550px;
+    font-size: 34px;
+    font-weight: 600;
+    color: $black;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    span {
+        color: $gray
+    }
+  }
 //========Main==============
 //about
 .about {

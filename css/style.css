@@ -324,6 +324,21 @@ h1, h2, h3, h4, h5, h6 {
   right: 30px;
 }
 
+.description__language_povorot_minus {
+  position: absolute;
+  right: 8px;
+  top: 550px;
+  font-size: 34px;
+  font-weight: 600;
+  color: #070707;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.description__language_povorot_minus span {
+  color: #828282;
+}
+
 .about {
   text-align: center;
   background: #F6F6F6;
