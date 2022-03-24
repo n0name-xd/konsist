@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,75 +16,75 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
-                <nav class="nav" id="home">
-                    <div class="burger">
-                        <a class="closebtn" onclick="closeNav()"><img src="img/cross.png" alt="close"></a>
-                        <div class="burger-content">
-                          <a href="#home" onclick="closeNav()">Home</a>
-                          <a href="#about" onclick="closeNav()">About me</a>
-                          <a href="#skills" onclick="closeNav()">Skills</a>
-                          <a href="#portfolio" onclick="closeNav()">Portfolio</a>
-                          <a href="#contacts" onclick="closeNav()">Contacts</a>
-                        </div>
-                        <div class="description__language_povorot_minus">
-                            <span>RU</span> | ENG
-                        </div>
-                      </div>
-                      <div class="icon__burger">
-                        <span onclick="openNav()"><img src="img/burger.png" alt="menu"></span>
-                      </div>
-                    <ul class="nav__items burger__item">
-                        <li><a class="firstElement" href="#home">Home</a></li>
-                        <li><a href="#about">About me</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contacts">Contacts</a></li>
-                    </ul>
-                </nav>
-                <div class="line">
-                </div>
-                <div class="description" id="about">
-                    <h1 class="description__name">
-                        Denis <br> Novik
-                    </h1>
-                    <div class="description__profession">
-                        UX | UI designer <br> 24 years old, Minsk
+            <nav class="nav" id="home">
+                <div class="burger">
+                    <a class="closebtn"><img src="img/cross.png" alt="close"></a>
+                    <div class="burger-content">
+                        <a href="#home" class="h">Home</a>
+                        <a href="#about" class="a">About me</a>
+                        <a href="#skills" class="s">Skills</a>
+                        <a href="#portfolio" class="p">Portfolio</a>
+                        <a href="#contacts" class="c">Contacts</a>
                     </div>
-                    <div class="description__language">
-                        <div class="description__language_povorot">
-                            <span>RU</span> | ENG
-                        </div>
+                    <div class="description__language_povorot_minus">
+                        <span>RU</span> | ENG
                     </div>
                 </div>
-                <div class="main-photo">
-                <picture >
-                    <source media="(max-width: 475px)"
-                            srcset="img/photo/mainmobile.png">   
+                <div class="icon__burger">
+                    <span class="opennav"><img src="img/burger.png" alt="menu"></span>
+                </div>
+                <ul class="nav__items burger__item">
+                    <li><a class="firstElement" href="#home">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="line">
+            </div>
+            <div class="description" id="about">
+                <h1 class="description__name">
+                    Denis <br> Novik
+                </h1>
+                <div class="description__profession">
+                    UX | UI designer <br> 24 years old, Minsk
+                </div>
+                <div class="description__language">
+                    <div class="description__language_povorot">
+                        <span>RU</span> | ENG
+                    </div>
+                </div>
+            </div>
+            <div class="main-photo">
+                <picture>
+                    <source media="(max-width: 475px)" srcset="img/photo/mainmobile.png">
                     <img src="img/photo/mainphoto.png" alt="photo Denis" class="photo-item">
-                 </picture>
-                </div>
+                </picture>
+            </div>
         </header>
         <main>
-            <div class="about"> 
+            <div class="about">
                 <h2 class="about__tytle block-name">About me</h2>
                 <div class="description">
                     <p>
-                        Hi, I'm Denis – UX/UI designer from Minsk. 
+                        Hi, I'm Denis – UX/UI designer from Minsk.
                         I'm interested in design and everything connected with it.
                     </p>
                     <p>
-                        I'm studying at courses "Web and mobile design 
+                        I'm studying at courses "Web and mobile design
                         interfaces" in IT-Academy.
                     </p>
                     <p>
                         Ready to implement excellent projects
-                         with wonderful people.
+                        with wonderful people.
                     </p>
                 </div>
-            </div> 
+            </div>
             <div class="skills" id="skills">
                 <h2 class="skills__tytle block-name">Skills</h2>
                 <div>
@@ -117,7 +118,7 @@
                         </div>
                         <div class="name-program">
                             <h3>Adobe <br>
-                                 Illustrator
+                                Illustrator
                             </h3>
                         </div>
                         <div class="stars">
@@ -155,7 +156,7 @@
                         </div>
                         <div class="name-program">
                             <h3>
-                               <br>Figma 
+                                <br>Figma
                             </h3>
                         </div>
                         <div class="stars">
@@ -168,9 +169,9 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                 </div>
-            </div> 
+            </div>
             <div class="portfolio" id="portfolio">
                 <h2 class="portfolio__tytle block-name">Portfolio</h2>
                 <div>
@@ -199,7 +200,7 @@
                 </div>
             </div>
         </main>
-        <footer id="contacts"> 
+        <footer id="contacts">
             <div class="contacts__tytle">
                 <h2 class="block-name">Contacts</h2>
             </div>
@@ -228,12 +229,13 @@
             <div class="contacts__name">
                 <p class="social-name">
                     Like me on <br>
-                     LinkedIn, Instagram, Behance, Dribble
+                    LinkedIn, Instagram, Behance, Dribble
                 </p>
             </div>
-        </footer> 
+        </footer>
     </div>
     <script src="js/script.js">
     </script>
 </body>
-</html> 
+
+</html>
